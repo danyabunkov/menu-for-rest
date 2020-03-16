@@ -1,0 +1,27 @@
+
+   
+      <div class="row">
+        <div style="height:120px;border-right: 1px solid white;" class="col s12 m6 l3">
+{{order.username}}
+        </div> 
+        <div style="height:120px; border-right: 1px solid white;"  class="col s12 m6 l3">
+          <p>
+{{order.table}}
+          </p>
+        </div>
+        <div style="height:120px;border-right: 1px solid white;" class="col s12 m6 l3">
+          <div>
+
+          {{order.item.name}}
+          </div>
+          <div>
+            {{order.item.value}}
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <br>
+          <p>{{order.date}}</p>
+        </div>
+      </div>
+
+

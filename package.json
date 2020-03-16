@@ -1,0 +1,19 @@
+{
+  "name": "qwe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.9.1",
+    "node-fetch": "^2.6.0",
+    "ws": "^7.2.1"
+  }
+}

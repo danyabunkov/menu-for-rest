@@ -1,0 +1,31 @@
+
+<head>
+ {{!-- position: relative;  margin-left: 44%; margin-top: 25% --}}
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body >
+  <div class="container">
+
+<div style="width: 100%;
+text-align: center; margin-top:400px">
+
+<form  action="/session" method="post">
+<input name='username'  type="text" placeholder="Your Name" minLength='5' style="background-color: rgba(255, 255, 255, 0.925);color:violet;font-size:20px;text-align:center;font-weight:500; border-radius:10px; width:400px">
+<br>
+<input name='table' type="number" max="100" min='1'  placeholder="Your Table" style="background-color: rgba(255, 255, 255, 0.925);color:violet;font-size:20px;text-align:center;font-weight:500; border-radius:10px;width:400px">
+<br>
+<button type="submit" style="border-radius: 15px;" class="btn-large waves-effect waves-yellow pulse purple z-depth-5">
+<i class="large material-icons right ">battery_unknown</i>Start your charging
+</button>
+
+</form>
+</div>
+  </div>
+
+</body>

@@ -1,0 +1,41 @@
+<div class='container' style="color:aqua;">
+
+  <ul class="collection with-header z-depth-5" style="border-radius:20px; margin-top:30px">
+    <li style="color: gray;" class="collection-header">
+      <h4 style="text-align: center;"><i>Your Order&nbsp; <u>{{user.username}}</u></i> &nbsp;&nbsp; <i>Your Tabble is: <u>{{user.table}}</u></i> <i style="color:orange; margin-top:-30px" class="large material-icons right">wb_sunny</i></h4>
+      
+    </li>
+     {{#if user.items}}
+   {{#each user.items}}
+    <li style="background-color: rgba(0, 0, 0, 0.788)" class="collection-item">
+      <div class="row">
+        <div style="height:120px;border-right: 1px solid white;" class="col s12 m6 l3">
+          <img class="z-depth-5" style="border:2px solid white;border-radius: 5px;" width="150" height="120" src="/img/1.jpg" alt="">
+        </div> 
+        <div style="height:120px; border-right: 1px solid white;"  class="col s12 m6 l3">
+          <p>
+           <div>Portion: <strong style="font-size: 17px; color:chocolate">{{value}} Kc</strong></div>
+      <div>For one: <strong style="font-size: 17px; color:chocolate">{{cost}} Kc</strong></div> 
+      <div>For All:  <strong style="font-size: 17px; color:chocolate">{{maincost}} Kc</strong></div>  
+          </p>
+        </div>
+        <div style="height:120px;border-right: 1px solid white;" class="col s12 m6 l3">
+          <p>{{date}}</p>
+        </div>
+        <div class="col s12 m6 l3">
+          <br>
+          <p>{{name}}</p>
+        </div>
+      </div>
+    </li>
+  {{/each}}
+    {{else}} 
+     <li style="color:black;font-size:35px; text-align:center" class="collection-item">
+
+    Вы ничего еще не заказали
+     </li>
+    
+    {{/if}} 
+  </ul>
+<a href="/restaurant" class="waves-effect waves-light orange btn-large" style="margin-left:45%; border-radius:15px;margin-bottom:40px"><i class="material-icons right">home</i>back</a>
+</div>
